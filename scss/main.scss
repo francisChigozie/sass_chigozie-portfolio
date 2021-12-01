@@ -435,7 +435,7 @@ a {
 @import 'media';
 
 // Smartphones
-@media(max-width: 600px) {
+@media(max-width: 500px) {
     #main-nav {
         flex-direction: column;
         align-items: center;
@@ -568,15 +568,47 @@ a {
 }
 
 // Landscape
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     #header-home {
         .header.content {
             padding-top: 3rem;
         }
     }
+
+    // About Section D:
+    #about {
+        &-d {
+            .testimonials {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0.5rem;
+            }
+        }
+    }
+
 }
 
-@media (max-width: 330px) {
+@media (max-width: 540px) {
+    #header-home {
+        .header.content {
+            padding-top: 3rem;
+        }
+    }
+
+   // About Section D:
+    #about {
+        &-d {
+            .testimonials {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0.5rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
     #header-home {
         .header.content {
             h1 {
@@ -584,4 +616,16 @@ a {
             }
         }
     }
+
+    // About Section D:
+    #about {
+        &-d {
+            .testimonials {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0.5rem;
+            }
+        }
+    }
+
 }

@@ -13,6 +13,7 @@
   "author": "Chigozie Cyriacus Francis",
   "license": "ISC",
   "devDependencies": {
+    "netlify-cli": "^8.0.6",
     "node-sass": "^6.0.1"
   }
 }
