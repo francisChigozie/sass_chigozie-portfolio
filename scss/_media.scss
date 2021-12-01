@@ -1,0 +1,21 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+    #header-home {
+        height: 30rem;
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    }
+
+    // About Section D:
+    #about {
+        &-d {
+            .testimonials {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+            }
+        }
+    }
+}
