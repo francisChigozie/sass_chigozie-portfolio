@@ -228,7 +228,7 @@ a {
 
 #header-inner {
   background: url("/dist/img/man_img.jfif") no-repeat 20% 25%/cover;
-  height: 5.5rem;
+  height: 7.5rem;
   border-bottom: 3px solid #e7ae11c9; }
 
 #home-a .specials {
@@ -319,6 +319,8 @@ a {
   display: grid;
   grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
+  #about-a .about-info .bio a:hover {
+    color: #e7ae11c9; }
 
 #about-a .bio-image {
   grid-area: bioimage;

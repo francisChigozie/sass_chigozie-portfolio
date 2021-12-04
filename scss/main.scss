@@ -85,6 +85,7 @@ a {
             text-align: center;
             padding: 20%;
 
+
             h1 {
                 font-size: 3rem;
                 line-height: 1.2;
@@ -96,7 +97,7 @@ a {
 
     &-inner {
       background: $bg-image no-repeat 20% 25% / cover;
-      height: 5.5rem;
+      height: 7.5rem;
       border-bottom: 3px solid $main-color;
 
     }
@@ -238,7 +239,12 @@ a {
             grid-template-areas: 'bioimage bio bio'
             'aw1 aw2 aw3';
             grid-gap: 1.2rem;
+            
+            .bio a:hover {
+            color: $main-color; 
+            }
         }
+        
 
         // Grid Area
         .bio-image {
@@ -406,7 +412,7 @@ a {
     background: $dark-color;
     color: #fff;
     height: 5rem;
-
+    
     .footer-content {
         display: flex;
         justify-content: space-between;
@@ -428,6 +434,7 @@ a {
             }
 
         }
+
     }
 }
 
