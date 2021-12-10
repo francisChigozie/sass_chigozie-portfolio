@@ -358,6 +358,7 @@ a {
 // Contact Page
 #contact {
     &-a {
+            
         .text-field {
             display: grid;
             grid-template-areas: 
@@ -384,6 +385,7 @@ a {
                 grid-area: message;
                 height: 100px;
             }
+
         }
 
         button[type='submit'] {
@@ -450,12 +452,16 @@ a {
         li {
             padding: 1rem;
         }
+        li .lang {
+                 left: 0;
+                 margin-bottom: 100px;
+            }
 
     }
 
     #header {
         &-home {
-            height: 10rem;
+            height: 15rem;
             border-bottom: 3px solid $main-color;
             background-position: 20% 30%;
 

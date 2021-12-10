@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d5be46b1b4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,7 @@
     <header id="header-inner">
         <div class="container">
             <nav id="main-nav">
-                <h1 id="logo">FC</h1>
+                <h1 class="logo"><a href="index.html">FC</a></h1>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -38,23 +40,28 @@
 
     <!-- Section A: Contact Form -->
     <section id="contact-a" class="text-center py-3">
-        <div class="container">
+        <div class="container card py-3">
             <h2 class="section-title">Contact Me</h2>
             <div class="bottom-line"></div>
             <p class="lead">Here is how you can reach me</p>
-<form action="https://digitalexhibition.herokuapp.com/contact" method="post">
+            <form id="form" class="form py-1">
                 <div class="text-field">
-                    <input type="text" name="name" class="text-input name-input" placeholder="Name" id="name" required>
-                    <input type="text" name="subject" class="text-input subject-input" placeholder="Subject" id="subject" required>
-                    <input type="email" name="email" class="text-input email-input" placeholder="Email Address" id="email" required>
-                    <input type="text" name="Phone" class="text-input phone-input" placeholder="Phone Number" id="phone" required>
-                    <textarea class="text-input message-input" placeholder="Enter Message" id="text" required></textarea>
+                    <input type="text" name="name" class="text-input name-input" placeholder="Name" id="name">
+                    
+                    <input type="text" name="subject" class="text-input subject-input" placeholder="Subject" id="subject">
+                    
+                    <input type="email" name="email" class="text-input email-input" placeholder="Email Address" id="email">
+                    
+                    <input type="text" name="Phone" class="text-input phone-input" placeholder="Phone Number" id="phone">
+                    
+                    <textarea name="text" class="text-input message-input" placeholder="Enter Message" id="text"></textarea>
                 </div>
-                <button type="submit" class="btn-dark">Submit</button>
+                    <button type="submit" class="btn-dark">Submit</button>
             </form>
-        </div>
+            
+    </div>
 
-    </section>
+</section>
 
     <!-- Section B: Contact Info -->
     <section id="contact-b" class="py-3 bg-medium">
@@ -98,7 +105,11 @@
             </div>
         </div>
     </footer>
-<script src="./js/postcotact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="./js/postcontact.js"></script>
 </body>
 
 </html>
+<!--
+action="https://digitalexhibition.herokuapp.com/contact" method="post"
+-->

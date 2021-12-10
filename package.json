@@ -4,7 +4,9 @@
   "description": "Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "dev": "parcel contact.html",
+    "build": "parcel build contact.html"
   },
   "repository": {
     "type": "git",
@@ -14,6 +16,10 @@
   "license": "ISC",
   "devDependencies": {
     "netlify-cli": "^8.0.6",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }

@@ -466,8 +466,11 @@ a {
     align-items: center; }
     #main-nav li {
       padding: 1rem; }
+    #main-nav li .lang {
+      left: 0;
+      margin-bottom: 100px; }
   #header-home {
-    height: 10rem;
+    height: 15rem;
     border-bottom: 3px solid #e7ae11c9;
     background-position: 20% 30%; }
     #header-home .header-content {
