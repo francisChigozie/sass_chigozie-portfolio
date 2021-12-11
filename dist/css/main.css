@@ -230,6 +230,8 @@ a {
   background: url("/dist/img/man_img.jfif") no-repeat 20% 25%/cover;
   height: 7.5rem;
   border-bottom: 3px solid #e7ae11c9; }
+  #header-inner a {
+    text-decoration: none; }
 
 #home-a .specials {
   margin-top: 3rem;

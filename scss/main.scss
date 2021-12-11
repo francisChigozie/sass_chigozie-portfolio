@@ -99,7 +99,10 @@ a {
       background: $bg-image no-repeat 20% 25% / cover;
       height: 7.5rem;
       border-bottom: 3px solid $main-color;
-
+       
+     a {
+            text-decoration: none;
+        }
     }
 }
 
