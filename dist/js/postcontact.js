@@ -186,3 +186,13 @@ function clrScreen(){
         }
     
 }
+
+function validateEmail(emailValue,error) {
+
+    const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,10})$/;
+    const email = emailValue;
+    if(!re.test(email.value)){
+    
+    }
+    
+}
