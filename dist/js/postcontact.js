@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e) {
    
     // Set time out
     setTimeout(getDataForm, .5000)
-
+    
     e.preventDefault();
 
 })
@@ -37,13 +37,14 @@ form.addEventListener('submit', function(e) {
    }else if(textValue === '') {
        showError('Please enter your message')
    }else{
-                      sendFormData();
+                      //sendFormData();
+                      postForm()
 
                     // showsuccess message
                     successMsg('Thanks ! Your message is sent and I write you back soon.');
 
-                    setInterval(() => {
-                        window.location = '/dist/contact.html';
+                 setInterval(() => {
+                       window.location = '/dist/contact.html';
                     },12000)
 
    }
@@ -134,6 +135,9 @@ function successMsg(error) {
          
 
 async function   sendFormData (){
+                    // send data message
+                    var data = new FormData(form)
+                    
                     // get the values from the inputs
                     const userValue = user.value.trim();
                     const subjectValue = subject.value.trim();
@@ -157,42 +161,40 @@ async function   sendFormData (){
                          phone: phoneValue,
                          text: textValue
                     })
-                })
                     .then((response) => {
                         response.json()
                         console.log(response)
                     })
                     .then((data) => {
                         console.log(data)
+                         
+                    })
+        })
 
-                    })          
-}
+            function clrScreen(){
+                // get the values from the inputs
+                // get the values from the inputs
+                        const userValue = user.value;
+                        const subjectValue = subject.value;
+                        const emailValue = email.value;
+                        const phoneValue = phone.value;
+                        const textValue = text.value;
 
-function clrScreen(){
-    // get the values from the inputs
-    // get the values from the inputs
-            const userValue = user.value;
-            const subjectValue = subject.value;
-            const emailValue = email.value;
-            const phoneValue = phone.value;
-            const textValue = text.value;
+                if (userValue !== '' && subjectValue !== '' &&
+                    emailValue !== '' && phoneValue !== '' && textValue !== ''){
 
-    if (userValue !== '' && subjectValue !== '' &&
-        emailValue !== '' && phoneValue !== '' && textValue !== ''){
+                        setInterval(() => {
+                            // window.location = 'contact.html';
+                        }, 3000);
+                    }
+                
+            }
 
-            setInterval(() => {
-             // window.location = 'contact.html';
-            }, 3000);
+        function validateEmail(emailValue,error) {
+
+            const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,10})$/;
+            const email = emailValue;
+            if(!re.test(email.value)){}
+            
         }
-    
-}
-
-function validateEmail(emailValue,error) {
-
-    const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,10})$/;
-    const email = emailValue;
-    if(!re.test(email.value)){
-    
-    }
-    
 }

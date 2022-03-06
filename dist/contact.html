@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d5be46b1b4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
@@ -46,7 +47,7 @@
             <p class="lead">Here is how you can reach me</p>
             <form id="form" class="form py-1">
                 <div class="text-field">
-                    <input type="text" name="name" class="text-input name-input" placeholder="Name" id="name">
+                    <input type="text" name="user" class="text-input name-input" placeholder="Name" id="name">
                     <div class="invalid-feedback">Name must be between 2 and characters</div>
                     <input type="text" name="subject" class="text-input subject-input" placeholder="Subject" id="subject">
                     <div class="invalid-feedback">Subject must be only characters</div>
@@ -65,6 +66,7 @@
 </section>
 
 <!--
+    https://digitalexhibition.herokuapp.com
     <div class="container">
     <div class="row">
         <div class="col-md-6 mx-auto">
