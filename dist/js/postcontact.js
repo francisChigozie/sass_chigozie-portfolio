@@ -32,13 +32,16 @@ form.addEventListener('submit', function(e) {
        showError('Please enter the subject')
    }else if(emailValue === '') {
        showError('Please enter email')
-   }else if(phoneValue === '') {
+   }else if(!isEmail(emailValue)) {
+    showError(email, 'Enter a valid email')
+}
+   else if(phoneValue === '') {
        showError('Please enter your phone number')
    }else if(textValue === '') {
        showError('Please enter your message')
    }else{
-                      //sendFormData();
-                      postForm()
+                      sendFormData();
+                     // postForm()
 
                     // showsuccess message
                     successMsg('Thanks ! Your message is sent and I write you back soon.');
@@ -48,6 +51,10 @@ form.addEventListener('submit', function(e) {
                     },12000)
 
    }
+}
+
+function isEmail(email){
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 }
 
 // showError
@@ -197,4 +204,5 @@ async function   sendFormData (){
             if(!re.test(email.value)){}
             
         }
+
 }
